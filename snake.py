@@ -22,3 +22,31 @@ class Snake:
             new_y = self.segments[seg_num - 1].ycor()
             self.segments[seg_num].goto(new_x, new_y)
         self.segments[0].fd(MOVE_DISTANCE)
+
+    def up(self):
+        for seg_num in range(len(self.segments) -1, 0 , -1):
+            new_x = self.segments[seg_num - 1].xcor()
+            new_y = self.segments[seg_num - 1].ycor()
+            self.segments[seg_num].goto(new_x, new_y)
+        self.segments[0].setheading(90)
+
+    def down(self):
+        for seg_num in range(len(self.segments) -1, 0 , -1):
+            new_x = self.segments[seg_num - 1].xcor()
+            new_y = self.segments[seg_num - 1].ycor()
+            self.segments[seg_num].goto(new_x, new_y)
+        self.segments[0].setheading(270)
+
+    def left(self):
+        for seg_num in range(len(self.segments) -1, 0 , -1):
+            new_x = self.segments[seg_num - 1].xcor()
+            new_y = self.segments[seg_num - 1].ycor()
+            self.segments[seg_num].goto(new_x, new_y)
+        self.segments[0].setheading(180)
+
+    def right(self):
+        for seg_num in range(len(self.segments) -1, 0 , -1):
+            new_x = self.segments[seg_num - 1].xcor()
+            new_y = self.segments[seg_num - 1].ycor()
+            self.segments[seg_num].goto(new_x, new_y)
+        self.segments[0].setheading(0)
