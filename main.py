@@ -37,9 +37,15 @@ while game_is_on:
     time.sleep(0.1)
     snake.move()
 
+    #Detect collision with food
     if snake.head.distance(food) < 15:
         scoreboard.add_point()
         food.refresh()
+
+    #Detect collision with wall
+    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+        game_is_on = False
+        scoreboard.game_over()
 
     # for seg_num in range(len(segments) -1, 0, -1):
     #     new_x = segments[seg_num - 1].xcor()
