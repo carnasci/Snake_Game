@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fa5053c-13ac-4cce-ac0a-fa410d19d6d8" name="Changes" comment="" />
+    <list default="true" id="6fa5053c-13ac-4cce-ac0a-fa410d19d6d8" name="Changes" comment="Day 21 - cleaned up snake head/body collision using slicing method, Day 21 finished">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scoreboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/scoreboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;carnasci&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/carnasci/Snake_Game.git&quot;,
+    &quot;accountId&quot;: &quot;083e58e6-b334-4da9-b7cb-18097525a46b&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2rBBfmEq3R2qAZ2BoSWNvnm88Oi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -21,8 +48,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.main.executor": "Run",
+    "Python.snake.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/cenma/PycharmProjects/100-Days-Of-Python/SnakeGame"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -41,6 +72,100 @@
       <option name="presentableId" value="Default" />
       <updated>1736022693884</updated>
     </task>
+    <task id="LOCAL-00001" summary="Day 20 - Snake Game started">
+      <option name="closed" value="true" />
+      <created>1736024440305</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736024440305</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Day 20 - Snake Game Class started">
+      <option name="closed" value="true" />
+      <created>1736025045304</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736025045304</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Day 20 - Snake Game Class finished">
+      <option name="closed" value="true" />
+      <created>1736026186422</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736026186422</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Day 20 - snake can be controlled with arrow keys">
+      <option name="closed" value="true" />
+      <created>1736026822645</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736026822645</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Day 20 - snake can be controlled with arrow keys(cleaned up code)">
+      <option name="closed" value="true" />
+      <created>1736027540747</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736027540747</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Day 20 - food class created, snake detects collision with food">
+      <option name="closed" value="true" />
+      <created>1736114837279</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736114837279</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Day 20 - scoreboard class created and keeps score">
+      <option name="closed" value="true" />
+      <created>1736116761597</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736116761597</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Day 20 - snake detects collision with walls and causes game over">
+      <option name="closed" value="true" />
+      <created>1736117317099</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1736117317099</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Day 20 - snake head detects collision with snake body and triggers game over">
+      <option name="closed" value="true" />
+      <created>1736118202557</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1736118202557</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Day 21 - cleaned up snake head/body collision using slicing method, Day 21 finished">
+      <option name="closed" value="true" />
+      <created>1736118966158</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1736118966158</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Day 20 - Snake Game started" />
+    <MESSAGE value="Day 20 - Snake Game Class started" />
+    <MESSAGE value="Day 20 - Snake Game Class finished" />
+    <MESSAGE value="Day 20 - snake can be controlled with arrow keys" />
+    <MESSAGE value="Day 20 - snake can be controlled with arrow keys(cleaned up code)" />
+    <MESSAGE value="Day 20 - food class created, snake detects collision with food" />
+    <MESSAGE value="Day 20 - scoreboard class created and keeps score" />
+    <MESSAGE value="Day 20 - snake detects collision with walls and causes game over" />
+    <MESSAGE value="Day 20 - snake head detects collision with snake body and triggers game over" />
+    <MESSAGE value="Day 21 - cleaned up snake head/body collision using slicing method, Day 21 finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day 21 - cleaned up snake head/body collision using slicing method, Day 21 finished" />
   </component>
 </project>
